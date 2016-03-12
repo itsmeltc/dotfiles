@@ -1,0 +1,53 @@
+# Configuration is split into the following directives:
+ 
+# config (for global configurations)
+ 
+config defaultToCurrentScreen true
+config resizePercentOf screenSize
+ 
+# alias (to create alias variables)
+ 
+alias full move screenOriginX;screenOriginY screenSizeX;screenSizeY
+alias lefthalf move screenOriginX;screenOriginY screenSizeX/2;screenSizeY
+alias righthalf move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY
+
+alias tophalf move screenOriginX;screenOriginY screenSizeX;screenSizeY/2
+alias bottomhalf move screenOriginX;screenOriginY+screenSizeY/2 screenSizeX;screenSizeY
+
+alias topleft corner top-left resize:screenSizeX/2;screenSizeY/2
+alias topright corner top-right resize:screenSizeX/2;screenSizeY/2
+alias bottomleft corner bottom-left resize:screenSizeX/2;screenSizeY/2
+alias bottomright corner bottom-right resize:screenSizeX/2;screenSizeY/2
+
+alias nudgeleft nudge -100 +0
+alias nudgeright nudge +100 +0
+alias nudgeup nudge +0 -100
+alias nudgedown nudge +0 +100
+ 
+alias hyper ctrl;alt;cmd
+ 
+# key bindings
+ 
+bind l:${hyper} focus right
+bind h:${hyper} focus left
+bind k:${hyper} focus up
+bind j:${hyper} focus down
+ 
+#Sizes
+bind 1:${hyper} ${topleft}
+bind 2:${hyper} ${topright}
+bind 3:${hyper} ${bottomleft}
+bind 4:${hyper} ${bottomright}
+
+# Bigger
+bind left:${hyper} ${lefthalf}
+bind right:${hyper} ${righthalf}
+bind up:${hyper} ${tophalf}
+bind down:${hyper} ${bottomhalf}
+bind m:${hyper} ${full}
+
+# Nudge
+bind left:shift;${hyper} ${nudgeleft}
+bind right:shift;${hyper} ${nudgeright}
+bind up:shift;${hyper} ${nudgeup}
+bind down:shift;${hyper} ${nudgedown}
