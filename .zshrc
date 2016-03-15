@@ -12,6 +12,7 @@ ZSH_THEME="agnoster"
 
 # Preferences
 ENABLE_CORRECTION="true"
+DEFAULT_USER=lee
 
 # User configuration
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
