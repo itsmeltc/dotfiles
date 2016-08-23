@@ -2,6 +2,13 @@
 # this file and re-run i3-config-wizard(1).
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
+exec --no-startup-id unity-settings-daemon
+exec --no-startup-id nm-applet
+exec --no-startup-id gnome-sound-applet
+exec --no-startup-id unity-files-daemon
+exec --no-startup-id unity-panels-service
+exec --no-startup-id nitrogen --restore
+
 # Cmd key
 #set $mod Mod4
 
@@ -40,9 +47,6 @@ font pango:System San Francisco Display 11
   client.focused_inactive $base02 $base02    $base03 $base0F
   client.unfocused        $base02 $base02    $base03 $base0F
   client.urgent           $base02 $base08    $base00 $base0F
-
-# Wallpaper
-exec feh --bg-scale /home/lee/bg.jpg
 
 # Assign Workspace Variables
 set $WS1 1 
