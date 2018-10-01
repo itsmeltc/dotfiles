@@ -10,3 +10,5 @@ Shift & F3::Send {Volume_Up}
 Shift & F4::Send {Media_Prev}
 Shift & F5::Send {Media_Play_Pause}
 Shift & F6::Send {Media_Next}
+
+§:: Run "ubuntu.exe"
