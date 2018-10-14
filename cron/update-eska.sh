@@ -1,0 +1,2 @@
+streamurl=$(curl -v --silent http://www.eskago.pl/radio/eska-wroclaw 2>&1 | grep -m1 t044-1.mp3 | cut -d "'" -f2)
+curl --silent -X PATCH "https://api.cloudflare.com/client/v4/zones/redacted/pagerules/redacted" -H "X-Auth-Email: redacted" -H "X-Auth-Key: redacted" -H "Content-Type: application/json" --data '{"targets":[{"target":"url","constraint":{"operator":"matches","value":"redacted"}}],"actions":[{"id":"forwarding_url","value": {"url": "'"${streamurl}"'","status_code": 301}}],"priority":1,"status":"active"}' > /dev/null
