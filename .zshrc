@@ -7,7 +7,7 @@ bindkey '[C' forward-word
 bindkey '[D' backward-word
 
 # Plugins & theme
-plugins=(git brew zsh-autosuggestions)
+plugins=(git brew zsh-autosuggestions zsh-syntax-highlighting)
 ZSH_THEME="agnoster"
 
 # Preferences
