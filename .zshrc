@@ -1,7 +1,8 @@
 # Path to your oh-my-zsh installation.
 case `uname` in
   Darwin)
-    
+  
+    export PATH="/usr/local/opt/python/libexec/bin:/usr/local/sbin:$PATH"
     export ZSH=/Users/lee/.oh-my-zsh
     
     # Virtualenv
