@@ -35,6 +35,7 @@ esac
 #bindkey '[a' beginning-of-line
 #bindkey '[e' end-of-line
 # iTerm Preferences > Profiles > Keys > Load Preset: Natural Text Editing
+# iTerm Preferences > Keys > Key Mappings: ⌘+← 0x01; ⌘+→ 0x05
 
 # Plugins & theme
 plugins=(git brew zsh-autosuggestions zsh-syntax-highlighting)
