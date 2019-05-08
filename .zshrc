@@ -29,9 +29,12 @@ case `uname` in
 esac
 
 # Key bindings
-bindkey -e
-bindkey '[C' forward-word
-bindkey '[D' backward-word
+#bindkey -e
+#bindkey '[C' forward-word
+#bindkey '[D' backward-word
+#bindkey '[a' beginning-of-line
+#bindkey '[e' end-of-line
+# iTerm Preferences > Profiles > Keys > Load Preset: Natural Text Editing
 
 # Plugins & theme
 plugins=(git brew zsh-autosuggestions zsh-syntax-highlighting)
